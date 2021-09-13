@@ -60,7 +60,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Movies" id="COs-SA-dxW"/>
+                    <navigationItem key="navigationItem" title="Movies" id="COs-SA-dxW">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="v4e-eS-pAv">
+                            <connections>
+                                <segue destination="vzN-A1-w6n" kind="show" id="dad-5T-eqh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Wz0-EG-dfw" id="hz2-Pf-FSa"/>
                     </connections>
@@ -68,6 +74,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="697.10144927536237" y="77.678571428571431"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Pvf-2A-3S1">
+            <objects>
+                <viewController id="vzN-A1-w6n" customClass="SettingsViewController" customModule="Flix_App" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FML-X6-GJK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLd-H4-9TN">
+                                <rect key="frame" x="20" y="152" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-2f-yZx">
+                                <rect key="frame" x="297" y="152" width="77" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="On"/>
+                                    <segment title="Off"/>
+                                </segments>
+                                <connections>
+                                    <action selector="DarkModeAction:" destination="vzN-A1-w6n" eventType="valueChanged" id="X6R-F1-k6r"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BvS-jR-God"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qEX-eN-Eij"/>
+                    <connections>
+                        <outlet property="DarkModeLabel" destination="eLd-H4-9TN" id="Ew3-Uq-xtK"/>
+                        <outlet property="DarkModeTheme" destination="vfE-2f-yZx" id="f6O-KI-Mqt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tY-Zo-iSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oCF-U1-Mv3">
