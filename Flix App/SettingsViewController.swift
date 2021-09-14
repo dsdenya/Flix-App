@@ -10,8 +10,8 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var DarkModeLabel: UILabel!
-    @IBOutlet weak var DarkModeTheme: UISegmentedControl!
     
+    @IBOutlet weak var DarkModeTheme: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +21,11 @@ class SettingsViewController: UIViewController {
         DarkModeTheme.selectedSegmentIndex = MTUserDefaults.shared.theme.rawValue
     }
     
+   
     @IBAction func DarkModeAction(_ sender: UISegmentedControl) {
-     
         MTUserDefaults.shared.theme = Theme(rawValue: sender.selectedSegmentIndex ) ?? .dark
         
             self.view.window?.overrideUserInterfaceStyle = MTUserDefaults.shared.theme.getUserInterfaceStyle()
-            
-        
     }
     
     

@@ -100,20 +100,13 @@
         <!--Settings View Controller-->
         <scene sceneID="Pvf-2A-3S1">
             <objects>
-                <viewController id="vzN-A1-w6n" customClass="SettingsViewController" customModule="Flix_App" sceneMemberID="viewController">
+                <viewController id="vzN-A1-w6n" customClass="SettingsViewController" customModule="Flix_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FML-X6-GJK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLd-H4-9TN">
-                                <rect key="frame" x="20" y="108" width="97" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-2f-yZx">
-                                <rect key="frame" x="303" y="103" width="77" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eLC-ac-PK7">
+                                <rect key="frame" x="290" y="151" width="77" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="On"/>
@@ -121,17 +114,23 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" systemColor="linkColor"/>
                                 <connections>
-                                    <action selector="DarkModeAction:" destination="vzN-A1-w6n" eventType="valueChanged" id="X6R-F1-k6r"/>
+                                    <action selector="DarkModeAction:" destination="vzN-A1-w6n" eventType="valueChanged" id="DV6-1v-dfs"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhk-v7-LTS">
+                                <rect key="frame" x="20" y="156" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BvS-jR-God"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="qEX-eN-Eij"/>
                     <connections>
-                        <outlet property="DarkModeLabel" destination="eLd-H4-9TN" id="Ew3-Uq-xtK"/>
-                        <outlet property="DarkModeTheme" destination="vfE-2f-yZx" id="f6O-KI-Mqt"/>
+                        <outlet property="DarkModeTheme" destination="eLC-ac-PK7" id="dwP-TR-1uU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tY-Zo-iSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
