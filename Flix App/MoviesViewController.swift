@@ -75,9 +75,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource,UITableViewD
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
         let movie = movies[indexPath.row]
-        let detailsViewController = segue.destination as! MovieDetailsViewController
+        //let detailsViewController = segue.destination as! MovieDetailsViewController
             
-        detailsViewController.movie = movie
+        //detailsViewController.movie = movie
         
     }
 

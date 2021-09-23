@@ -11,8 +11,7 @@ import AlamofireImage
 
 class MovieDetailsViewController: UIViewController {
 
-    internal class
-    MovieDetailsViewController:UIViewController{
+    
     
     @IBOutlet weak var backdropView: UIImageView!
     @IBOutlet weak var posterView: UIImageView!
@@ -62,5 +61,5 @@ class MovieDetailsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
+
 
