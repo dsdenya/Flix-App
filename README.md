@@ -1,45 +1,22 @@
-# Flix-App
-# Flix
 
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+📝 `NOTE` Paste this template at the top of your existing `README.md` file from part 1 of this assignment. (🚫 Remove this paragraph after after checking off completed user stories)
 
----
-
-## Flix Part 1
+## Flix Part 2
 
 ### User Stories
 
 #### REQUIRED (10pts)
-- [X] (2pts) User sees an app icon on the home screen and a styled launch screen.
-- [X] (5pts) User can view and scroll through a list of movies now playing in theaters.
-- [X] (3pts) User can view the movie poster image for each movie.
+- [] (5pts) User can tap a cell to see more details about a particular movie.
+- [] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
-- [X] (2pt) User can view the app on various device sizes and orientations.
-- [X] (1pt) Run your app on a real device.
+- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
+`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-Iphone 11:
-![iphone11](https://user-images.githubusercontent.com/88856401/133538588-844b3e96-4092-4e57-af46-4fd97acdcc62.gif)
-
-
-User can view the app on various device sizes and orientations:
-
-iphoneSE 2nd Gen:
-
-![iphoneSE2ndGen](https://user-images.githubusercontent.com/88856401/133538655-c8b33dc3-927e-4436-8255-944b6327f315.gif)
-
-
-iphone 8Plus:
-
-![iphone8plus](https://user-images.githubusercontent.com/88856401/133538721-6e46674d-c101-4d73-80ce-06c08d1d0eb9.gif)
-
-
-
-
+<img src="YOUR_GIF_URL_HERE" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
-
-Installing Cocoa Pods was extremely difficult. API is something that seems difficult but with more practice I know I can be better at it. An extra feature I added is dark mode and I will add a search function in the near future. 
+I had the most challenge with assignment 2 because everytime I had an problem another problem popped up. My app was working until it got to  the Collection View setup. 
