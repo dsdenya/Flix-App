@@ -7,7 +7,7 @@
 
 #### REQUIRED (10pts)
 - [] (5pts) User can tap a cell to see more details about a particular movie.
-- [] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+- [X] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
 - [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
@@ -15,7 +15,7 @@
 
 ### App Walkthrough GIF
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/88856401/134451410-ff13a65d-f617-49f2-a4f6-096f31823832.gif)
 
 ### Notes
 I had the most challenge with assignment 2 because everytime I had an problem another problem popped up. My app was working until it got to  the Collection View setup. 
