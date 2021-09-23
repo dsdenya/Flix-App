@@ -18,4 +18,4 @@
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/88856401/134451410-ff13a65d-f617-49f2-a4f6-096f31823832.gif)
 
 ### Notes
-I had the most challenge with assignment 2 because everytime I had an problem another problem popped up. My app was working until it got to  the Collection View setup. 
+I had the most challenge with assignment 2 because everytime I had an problem another problem popped up that regressed the progress that was made before. My app was working until it got to  the Collection View setup. 
