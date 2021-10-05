@@ -1,5 +1,6 @@
+## Flix Part 1
+![iphone11](https://user-images.githubusercontent.com/88856401/135940251-fbe44afa-977b-4322-b350-57324a1a206c.gif)
 
-📝 `NOTE` Paste this template at the top of your existing `README.md` file from part 1 of this assignment. (🚫 Remove this paragraph after after checking off completed user stories)
 
 ## Flix Part 2
 
